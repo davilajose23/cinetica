@@ -62,7 +62,7 @@
   </v-navigation-drawer>
   
     <div style="position: relative; overflow: hidden;">
-    <v-toolbar color="white" app   clipped scroll-off-screen>
+    <v-toolbar color="white" app  clipped >
         <v-toolbar-side-icon v-if="$vuetify.breakpoint.width <= 1264" @click="drawer = !drawer"></v-toolbar-side-icon>
         <span class="title "><img src="/logo_cinetica.png" height="58px" alt=""></span>
         <v-spacer></v-spacer>
@@ -79,9 +79,9 @@
     </v-content>
 
     </div>
-    <v-footer app fixed>
+    <!-- <v-footer app fixed>
         
-    </v-footer>
+    </v-footer> -->
     </v-app>
   </div>
 </template>
@@ -94,7 +94,6 @@ import Home from './components/Home.vue'
 import MovieDetails from './components/MovieDetails.vue'
 import Lists from './components/Lists.vue'
 import listDetail from './components/ListDetails.vue'
-
 
 
 // var database = firebase.database();
@@ -125,12 +124,12 @@ export default {
       drawer: null,
       menu: [
         { icon: 'home', text: 'Inicio', route: '/' },
-        { icon: 'local_movies', text: 'Peliculas', route: 'movies'},
-        { icon: 'tv', text: 'Series', route: 'movies'},
-        { icon: 'list', text: 'List Detail', route: 'listDetail'},
-        { icon: 'list', text: "Listas", route: 'lists'},
-        { icon: 'favorite', text: 'Favoritos', route: 'movies'},
-        { icon: 'date_range', text: 'Proyecciones del periodo', route: 'calendar'},
+        { icon: 'local_movies', text: 'Peliculas', route: '/movies'},
+        { icon: 'tv', text: 'Series', route: '/movies'},
+        { icon: 'list', text: 'List Detail', route: '/listDetail'},
+        { icon: 'list', text: "Listas", route: '/lists'},
+        // { icon: 'favorite', text: 'Favoritos', route: '/movies'},
+        { icon: 'date_range', text: 'Proyecciones del periodo', route: '/calendar'},
         // { icon: 'date_range', text: 'Details', route: 'details'},
         { divider: true },
         { icon: 'help', text: 'Help' },

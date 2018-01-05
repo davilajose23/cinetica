@@ -6,6 +6,7 @@ import Vuetify from 'vuetify'
 import VueRouter from 'vue-router'
 import App from './App.vue'
 
+
 // var firebase = require("firebase");
 
 // var config = {

@@ -11,8 +11,6 @@
                             </v-toolbar> -->
                             <div class="headline  pa-3 green  darken-2 light white--text"> 
                                 {{list.name}} 
-                                
-                                
                             </div>
                             <!-- <v-card-media> <img src="https://i.ytimg.com/vi/cZZlthue_rQ/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAtUcl9vWOjDkwHqwXSTfFTh37RaA" alt=""> </v-card-media>    -->
                             <div v-for="(item, index) in list.items" :key="index">
