@@ -30,7 +30,7 @@ Vue.use(VueRouter)
 Vue.use(VueFire)
 
 import routes from './routes'
-const router = new VueRouter({ routes })
+const router = new VueRouter({ routes, mode:'history' })
 
 const app = new Vue({ // eslint-disable-line no-new
   el: '#app',

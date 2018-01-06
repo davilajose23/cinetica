@@ -162,7 +162,7 @@ export default {
             var ide = this.$route.params.movieid
             console.log(ide)
             var self=this;
-            axios.get('http://www.omdbapi.com/', {
+            axios.get('https://www.omdbapi.com/', {
                 params: {
                 i: ide,
                 apikey: '138c1c4f'
