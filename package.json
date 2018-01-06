@@ -4,6 +4,7 @@
   "description": "a movie project",
   "author": "Jose Fernando Davila",
   "private": true,
+  "homepage": "https://github.com/davilajose23/cinetica",
   "scripts": {
     "watchify": "watchify -vd -p browserify-hmr -e src/main.js -o dist/build.js",
     "serve": "http-server -o -c 1 -a 0.0.0.0",
@@ -11,6 +12,7 @@
     "dev": "npm-run-all --parallel watchify serve ",
     "lint": "eslint --ext .js,.vue src test/unit",
     "test": "karma start karma.conf.js",
+    "deploy": "node ./node_modules/vue-gh-pages/index.js",
     "build": "cross-env NODE_ENV=production browserify -g envify -p [ vueify/plugins/extract-css -o dist/build.css ] -e src/main.js | uglifyjs -c warnings=false -m > dist/build.js"
   },
   "browserify": {
@@ -25,6 +27,7 @@
   "dependencies": {
     "firebase": "^4.8.1",
     "vue": "^2.5.13",
+    "vue-gh-pages": "^1.7.3",
     "vue-infinite-loading": "^2.2.3",
     "vue-router": "^3.0.1",
     "vuefire": "^1.4.5",
